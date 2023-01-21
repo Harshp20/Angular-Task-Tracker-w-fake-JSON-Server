@@ -1,0 +1,29 @@
+.task {
+    display: flex;
+    flex-direction:  column;
+    gap: 0.4rem;
+    background-color: #eee;
+    padding: 1em;
+    min-width: 10rem;
+    button {
+        background-color: rgb(226, 40, 40);
+        color: #fff;
+        padding: 0.5em 0;
+        font-weight: 600;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(228, 51, 51);
+        }
+    }
+}
+
+.completed {
+    border-left: 5px solid green;
+}
+
+.incomplete {
+    border-left: 5px solid red;;
+}

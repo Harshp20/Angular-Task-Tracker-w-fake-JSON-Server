@@ -1,0 +1,6 @@
+<div [ngClass]="getStyleByStatus(task.status)" class="task">
+    <span>Id: <span [ngStyle]="{'font-weight': 600}">{{ task.id }}</span></span>
+    <span>Title: <span [ngStyle]="{'font-weight': 600}">{{ task.title }}</span></span>
+    <span>Status: <span [ngStyle]="{'font-weight': 600}">{{ task.status ? 'Completed' : 'Incomplete' }}</span></span>
+    <button (click)="deleteTask()">Delete</button>
+</div>

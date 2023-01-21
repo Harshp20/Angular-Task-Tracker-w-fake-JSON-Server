@@ -1,0 +1,6 @@
+<app-form (add)="addToList($event)"></app-form>
+<div class="tasks">
+    <app-task *ngFor="let task of tasks" [task]="task"
+        (deleteEvent)="deleteTask(task.id)" (dblclick)="toggleStatus(task)">
+    </app-task>
+</div>
